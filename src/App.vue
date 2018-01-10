@@ -1,18 +1,20 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <!--<HelloWorld/>-->
+    <!--<Hi/>-->
+    <router-view></router-view>
+    <!--<router-link :to="{path:'HelloWord'}">helloWord</router-link>-->
   </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+// import HelloWorld from './components/HelloWorld'
+// import Hi from './components/Hi.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
