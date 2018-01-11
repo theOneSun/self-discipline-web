@@ -2,13 +2,15 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App.vue'
-// import Hi from './components/Hi.vue'
+import Hi from './components/Hi.vue'
 import VueRouter from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 
+Vue.use(VueRouter)
+
 const routes = [
-  { path: '/', component: HelloWorld }
-  // { path: '/hi ', component: Hi }
+  { path: '/', component: HelloWorld },
+  { path: '/hi ', component: Hi }
 ]
 
 // 3. 创建 router 实例，然后传 `routes` 配置

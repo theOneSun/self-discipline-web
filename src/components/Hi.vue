@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg2 }}</h1>
     <!--<h2>Essential Links</h2>-->
     <!--<ul>-->
       <!--<li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>-->
@@ -25,7 +25,7 @@ export default {
   name: 'Hi',
   data () {
     return {
-      msg: 'Hi'
+      msg2: 'Welcome to Hi'
     }
   }
 }

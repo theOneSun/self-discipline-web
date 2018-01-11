@@ -3,6 +3,7 @@
     <img src="./assets/logo.png">
     <!--<HelloWorld/>-->
     <!--<Hi/>-->
+    <router-link to="/hi">Go to Hi</router-link>
     <router-view></router-view>
     <!--<router-link :to="{path:'HelloWord'}">helloWord</router-link>-->
   </div>
