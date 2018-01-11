@@ -1,6 +1,6 @@
 <template>
-  <div class="app">
-    <h1>{{ msg2 }}</h1>
+  <div>
+    <h1>hi</h1>
     <!--<h2>Essential Links</h2>-->
     <!--<ul>-->
       <!--<li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>-->

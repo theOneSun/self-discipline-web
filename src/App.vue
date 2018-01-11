@@ -4,8 +4,10 @@
     <!--<HelloWorld/>-->
     <!--<Hi/>-->
     <router-link to="/hi">Go to Hi</router-link>
+    <router-link to="/one">Go to 1</router-link>
+    <router-link to="/two">Go to 2</router-link>
     <router-view></router-view>
-    <!--<router-link :to="{path:'HelloWord'}">helloWord</router-link>-->
+    <!--<router-link :to="{path:'hi'}">go hi</router-link>-->
   </div>
 
 </template>
