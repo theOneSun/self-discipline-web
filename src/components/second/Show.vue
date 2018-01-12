@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>hi</h1>
+    <h1>data</h1>
     <h2>已输入</h2>
     <ul v-for="item in alreadyInput">
       <li>{{item}}</li>
@@ -11,10 +11,10 @@
 
 <script>
   export default {
-    name: 'Hi',
+    name: 'Show',
     data () {
       return {
-        msg2: 'Welcome to Hi',
+        msg2: 'show data',
         alreadyInput: []
       }
     },

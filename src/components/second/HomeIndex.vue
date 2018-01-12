@@ -1,45 +1,35 @@
 <!--首页-->
 <template>
   <div class="hello">
-    <Header></Header>
-    <!--<div>-->
-      <!--<p>主页</p>-->
-      <!--<div>-->
-        <!--<label>-->
-          <!--<input width="200px" @keyup.enter="showAlert()" v-model="inputData"/>-->
-          <!--&lt;!&ndash;<input width="200px" @keyup.enter="addResult2()" ref="test1"/>&ndash;&gt;-->
-          <!--<p>{{ inputData }}</p>-->
-        <!--</label>-->
-      <!--</div>-->
-      <!--<p>已添加:</p>-->
-      <!--<div v-for="item in result">-->
-        <!--{{ item }}-->
-      <!--</div>-->
-      <!--<div>-->
-        <!--<router-link to="/home/show">Go to Show</router-link>-->
-      <!--</div>-->
-    <!--</div>-->
-    <router-view></router-view>
-    <Footer></Footer>
+    <div>
+      <p>主页</p>
+      <div>
+        <label>
+          <input width="200px" @keyup.enter="showAlert()" v-model="inputData"/>
+          <!--<input width="200px" @keyup.enter="addResult2()" ref="test1"/>-->
+          <p>{{ inputData }}</p>
+        </label>
+      </div>
+      <p>已添加:</p>
+      <div v-for="item in result">
+        {{ item }}
+      </div>
+      <div>
+        <router-link to="/home/show">Go to Show</router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  import Header from './Header.vue'
-  import Footer from './Footer.vue'
-
   export default {
-    name: 'Home',
+    name: 'HomeIndex',
     data () {
       return {
         msg: 'Welcome to Home',
         result: [''],
         inputData: ''
       }
-    },
-    components: {
-      Header,
-      Footer
     },
     methods: {
       addResult (param) {

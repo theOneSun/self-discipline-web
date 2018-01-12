@@ -9,12 +9,37 @@ import One from './components/One.vue'
 import Two from './components/Two.vue'
 import Home from './components/Home.vue'
 import ElementUI from 'element-ui'
+import Show from './components/second/Show.vue'
+import HomeIndex from './components/second/HomeIndex.vue'
 
 Vue.use(VueRouter)
 Vue.use(ElementUI)
 
 const routes = [
-  {path: '/', component: Home},
+  {
+    path: '/',
+    component: Home,
+    children: [
+      {
+        path: '/',
+        component: HomeIndex
+      }
+    ]
+  },
+  {
+    path: '/home',
+    component: Home,
+    children: [
+      {
+        path: '/',
+        component: HomeIndex
+      },
+      {
+        path: 'show',
+        component: Show
+      }
+    ]
+  },
   {path: '/hi', component: Hi},
   {path: '/one', component: One},
   {path: '/two', component: Two},

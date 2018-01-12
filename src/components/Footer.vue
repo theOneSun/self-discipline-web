@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Foot',
+  name: 'Footer',
   data () {
     return {
       message: 'This is bottom message'

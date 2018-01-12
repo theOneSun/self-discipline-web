@@ -7,7 +7,7 @@
 
 <script>
   export default {
-    name: 'Head',
+    name: 'Header',
     data () {
       return {
         title: 'This is title'
