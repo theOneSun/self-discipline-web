@@ -1,21 +1,10 @@
 <template>
   <div id="app">
-
-    <!--<HelloWorld/>-->
-    <!--<Hi/>-->
-    <!--<router-link to="/hi">Go to Hi</router-link>
-    <router-link to="/one">Go to 1</router-link>
-    <router-link to="/two">Go to 2</router-link>-->
-    <!--<Head/>-->
     <router-view></router-view>
-    <!--<Foot/>-->
-    <!--<router-link :to="{path:'hi'}">go hi</router-link>-->
   </div>
-
 </template>
 
 <script>
-
 export default {
   name: 'app',
   data () {
@@ -34,5 +23,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  /*height:100%;*/
+  /*width: 100%;*/
 }
 </style>

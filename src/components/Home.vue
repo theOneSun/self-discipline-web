@@ -1,6 +1,6 @@
 <!--首页-->
 <template>
-  <div class="hello">
+  <div class="home">
     <Header></Header>
     <router-view></router-view>
     <Footer></Footer>
@@ -27,21 +27,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
+  .home {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/Iniesta.jpg");
+    /*background-size: 100%,100%;*/
   }
 </style>

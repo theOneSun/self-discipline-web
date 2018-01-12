@@ -1,7 +1,7 @@
 <template>
-  <div class="head">
+  <div class="header">
     <h1>{{title}}</h1>
-    <img src="../assets/logo.png">
+    <!--<img src="../assets/logo.png">-->
   </div>
 </template>
 
@@ -18,9 +18,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .head {
-    width: 1500px;
-    height: 300px;
+  .header {
+    /*width: 1500px;*/
+    /*height: 300px;*/
+    height: 30%;
     /*align-items: center;*/
   }
   h1, h2 {
