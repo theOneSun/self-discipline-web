@@ -6,7 +6,8 @@
       <p>主页</p>
       <div>
         <label>
-          <input width="200px" @keyup.enter="showAlert()" v-model="inputData"/>
+          <!--<input width="200px" @keyup.enter="showAlert()" v-model="inputData"/>-->
+          <input width="200px" @keyup.enter="addResult2()" ref="test1"/>
           <p>{{ inputData }}</p>
         </label>
       </div>
@@ -39,6 +40,11 @@
     methods: {
       addResult (param) {
         this.result.push(param)
+      },
+      addResult2 () {
+        let val = this.$refs.test1.value
+        this.result.push(val)
+        this.$refs.test1.value = ''
       },
       showAlert () {
         let that = this
