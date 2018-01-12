@@ -11,11 +11,12 @@
         </label>
       </div>
       <p>已添加:</p>
-      <div v-for="item in result">
+      <div v-for="item in inputResult">
         {{ item }}
       </div>
       <div>
-        <router-link to="/home/show">Go to Show</router-link>
+        <!--<router-link to="/home/show" @click="goShow()">Go to Show</router-link>-->
+        <button @click="goShow()">展示数据</button>
       </div>
     </div>
   </div>
@@ -27,17 +28,17 @@
     data () {
       return {
         msg: 'Welcome to Home',
-        result: [''],
+        inputResult: [],
         inputData: ''
       }
     },
     methods: {
       addResult (param) {
-        this.result.push(param)
+        this.inputResult.push(param)
       },
 //      addResult2 () {
 //        let val = this.$refs.test1.value
-//        this.result.push(val)
+//        this.inputResult.push(val)
 //        this.$refs.test1.value = ''
 //      },
       showAlert () {
@@ -45,6 +46,10 @@
         alert('哈哈')
         this.addResult(that.inputData)
         this.inputData = ''
+      },
+      goShow () {
+        localStorage.setItem('inputResult', JSON.stringify(this.inputResult))
+        this.$router.push({path: '/home/show'})
       }
     }
   }
@@ -68,5 +73,9 @@
 
   a {
     color: #42b983;
+  }
+  button {
+    width: 100px;
+    height: 30px;
   }
 </style>

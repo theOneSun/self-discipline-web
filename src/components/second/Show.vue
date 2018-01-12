@@ -2,8 +2,8 @@
   <div>
     <h1>data</h1>
     <h2>已输入</h2>
-    <ul v-for="item in alreadyInput">
-      <li>{{item}}</li>
+    <ul>
+      <li v-for="item in alreadyInput">{{ item }}</li>
     </ul>
 
   </div>
@@ -19,7 +19,8 @@
       }
     },
     mounted () {
-      this.alreadyInput = ['asd', '123']
+      console.log(localStorage.getItem('inputResult'))
+      this.alreadyInput = JSON.parse(localStorage.getItem('inputResult'))
     }
   }
 </script>
@@ -36,7 +37,6 @@
   }
 
   li {
-    display: inline-block;
     margin: 0 10px;
   }
 
