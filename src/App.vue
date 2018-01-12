@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
     <!--<HelloWorld/>-->
     <!--<Hi/>-->
-    <router-link to="/hi">Go to Hi</router-link>
+    <!--<router-link to="/hi">Go to Hi</router-link>
     <router-link to="/one">Go to 1</router-link>
-    <router-link to="/two">Go to 2</router-link>
+    <router-link to="/two">Go to 2</router-link>-->
+    <!--<Head/>-->
     <router-view></router-view>
+    <!--<Foot/>-->
     <!--<router-link :to="{path:'hi'}">go hi</router-link>-->
   </div>
 
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld'
-// import Hi from './components/Hi.vue'
 
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      a: 'aaa'
+    }
+  }
 }
 </script>
 
