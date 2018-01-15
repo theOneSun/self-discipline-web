@@ -21,7 +21,7 @@
   .header {
     /*width: 1500px;*/
     /*height: 300px;*/
-    height: 30%;
+    /*height: 30%;*/
     /*align-items: center;*/
   }
   h1, h2 {
