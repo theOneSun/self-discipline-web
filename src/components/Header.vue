@@ -24,6 +24,7 @@
     /*height: 30%;*/
     /*align-items: center;*/
   }
+
   h1, h2 {
     font-weight: normal;
   }

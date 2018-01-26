@@ -2,6 +2,7 @@
 import Home from '../components/Home.vue'
 import HomeIndex from '../components/second/HomeIndex.vue'
 import Show from '../components/second/Show.vue'
+import Login from '../components/second/Login.vue'
 
 const routes = [
   {
@@ -25,6 +26,10 @@ const routes = [
       {
         path: 'show',
         component: Show
+      },
+      {
+        path: 'login',
+        component: Login
       }
     ]
   }

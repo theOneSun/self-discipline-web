@@ -18,6 +18,7 @@
         <!--<router-link to="/home/show" @click="goShow()">Go to Show</router-link>-->
         <button @click="goShow()">展示数据</button>
       </div>
+      <button @click="goLogin()">登录</button>
     </div>
   </div>
 </template>
@@ -50,6 +51,9 @@
       goShow () {
         localStorage.setItem('inputResult', JSON.stringify(this.inputResult))
         this.$router.push({path: '/home/show'})
+      },
+      goLogin () {
+        this.$router.push({path: '/home/login'})
       }
     }
   }
@@ -74,6 +78,7 @@
   a {
     color: #42b983;
   }
+
   button {
     width: 100px;
     height: 30px;
