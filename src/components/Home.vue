@@ -1,9 +1,9 @@
 <!--首页-->
 <template>
   <div class="home">
-    <Header></Header>
+    <!--<Header></Header>-->
     <router-view></router-view>
-    <Footer></Footer>
+    <!--<Footer></Footer>-->
   </div>
 </template>
 
