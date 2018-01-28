@@ -11,12 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/discipline': {
-        target: 'http://localhost:8080', // 本地开发
+      '/': {
+        target: 'http://localhost:8080/', // 本地开发
         secure: false,      // 如果是https接口，需要配置这个参数
         changeOrigin: false,     // 如果接口跨域，需要进行这个参数配置
         pathRewrite: {
-          '^/': ''   //需要rewrite重写的,
+          '^/discipline': ''   // 需要rewrite重写的,
         }
       }
     },
@@ -49,7 +49,7 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true,
+    cssSourceMap: true
   },
 
   build: {

@@ -45,9 +45,10 @@
         })
       },
       sayHello () {
+        let that = this
         axios.post('/discipline/demo/hello').then(function (response) {
           console.log(response)
-          this.msg = response.data
+          that.msg = response.data
         }).catch(function (error) {
           console.log(error)
         })
