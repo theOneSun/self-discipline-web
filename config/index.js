@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/': {
-        target: 'http://localhost:8080/', // 本地开发
+        target: 'http://localhost:8086/', // 本地开发
         secure: false,      // 如果是https接口，需要配置这个参数
         changeOrigin: false,     // 如果接口跨域，需要进行这个参数配置
         pathRewrite: {
