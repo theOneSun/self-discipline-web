@@ -20,17 +20,25 @@
       </div>
       <button @click="goLogin()">登录</button>
     </div>
+    <div>
+      <p>测试</p>
+      <p>{{ testData }}</p>
+      <button @click="testHello()"></button>
+    </div>
   </div>
 </template>
 
 <script>
+  import axios from 'axios'
+
   export default {
     name: 'HomeIndex',
     data () {
       return {
         msg: 'Welcome to Home',
         inputResult: [],
-        inputData: ''
+        inputData: '',
+        testData: ''
       }
     },
     methods: {
@@ -54,6 +62,14 @@
       },
       goLogin () {
         this.$router.push({path: '/home/login'})
+      },
+      testHello () {
+        axios.get('http://localhost:8086/demo/hello', {headers: {'Access-Control-Allow-Origin': '*'}})
+          .then(function (response) {
+            console.log(response)
+          }).catch(function (error) {
+            console.log(error)
+          })
       }
     }
   }
