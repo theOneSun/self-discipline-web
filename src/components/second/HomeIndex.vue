@@ -64,13 +64,17 @@
         this.$router.push({path: '/home/login'})
       },
       testHello () {
-        axios.get('http://172.16.8.7:8086/demo/hello', {headers: {'Access-Control-Allow-Origin': '*'}})
-          .then(function (response) {
-            debugger
-            console.log(response)
-          }).catch(function (error) {
-            console.log(error)
-          })
+        axios.get('/discipline/demo/hello', {
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'x-requested-with': 'XMLHttpRequest'
+          }
+        })
+        .then(function (response) {
+          console.log(response)
+        }).catch(function (error) {
+          console.log(error)
+        })
       }
     }
   }
